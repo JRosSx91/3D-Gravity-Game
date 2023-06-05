@@ -18,4 +18,9 @@ fn main() {
     camera.set_position([0.0, 0.0, 500.0]);
 
     let mut scene = window.factory.scene();
+
+    let mut star = window.factory.sphere(50.0, 32, 32);
+    star.set_color(0xffff00);
+    star.set_position([0.0, 0.0, 0.0]);
+    scene.add(&star);
 }
