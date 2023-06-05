@@ -46,5 +46,16 @@ fn main() {
         .target([0.0, 0.0, 0.0])
         .build();
 
-    while window.update() && !window.input.hit(three::KEY_ESCAPE) {}
+    while window.update() && !window.input.hit(three::KEY_ESCAPE) {
+        for particle in &mut particles {
+            let dx = star.position().x - particle.x;
+            let dy = star.position().y - particle.y;
+            let dz = star.position().z - particle.z;
+            let distance_squared = dx * dx + dy * dy + dz * dz;
+            let force = 0.1 * star.scale().x / (1.0 + distance_squared);
+            particle.speed_x += force * dx;
+            particle.speed_y += force * dy;
+            particle.speed_z += force * dz;
+        }
+    }
 }
