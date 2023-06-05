@@ -40,4 +40,9 @@ fn main() {
         scene.add(&mesh);
         particles.push(particle);
     }
+
+    let controls = OrbitControls::builder(&window)
+        .position([0.0, 0.0, 500.0])
+        .target([0.0, 0.0, 0.0])
+        .build();
 }
