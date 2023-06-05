@@ -23,4 +23,21 @@ fn main() {
     star.set_color(0xffff00);
     star.set_position([0.0, 0.0, 0.0]);
     scene.add(&star);
+
+    let mut particles = Vec::new();
+    for _ in 0..1000 {
+        let particle = Particle {
+            x: rand::random::<f32>() * 800.0 - 400.0,
+            y: rand::random::<f32>() * 800.0 - 400.0,
+            z: rand::random::<f32>() * 800.0 - 400.0,
+            speed_x: 0.0,
+            speed_y: 0.0,
+            speed_z: 0.0,
+            mass: rand::random::<f32>() * 4.0 + 1.0,
+        };
+        let mut mesh = window.factory.sphere(particle.mass * 2.0, 16, 16);
+        mesh.set_position([particle.x, particle.y, particle.z]);
+        scene.add(&mesh);
+        particles.push(particle);
+    }
 }
