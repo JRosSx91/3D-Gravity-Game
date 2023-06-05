@@ -13,4 +13,7 @@ struct Particle {
 }
 fn main() {
     let window = Window::new("Star Formation", "/assets");
+
+    let mut camera = window.factory.perspective_camera(60.0, 0.1, 1000.0);
+    camera.set_position([0.0, 0.0, 500.0]);
 }
