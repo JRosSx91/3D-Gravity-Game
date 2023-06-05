@@ -57,5 +57,14 @@ fn main() {
             particle.speed_y += force * dy;
             particle.speed_z += force * dz;
         }
+        for (particle, mesh) in particles.iter_mut().zip(scene.objects_mut()) {
+            particle.x += particle.speed_x;
+            particle.y += particle.speed_y;
+            particle.z += particle.speed_z;
+            mesh.set_position([particle.x, particle.y, particle.z]);
+        }
+
+        controls.update(&window.input);
+        window.render(&camera, &scene);
     }
 }
