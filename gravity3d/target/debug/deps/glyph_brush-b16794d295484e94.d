@@ -1,0 +1,10 @@
+C:\Users\Ivan\labs\rust\3D-Gravity-Game\gravity3d\target\debug\deps\glyph_brush-b16794d295484e94.rmeta: C:\Users\Ivan\.cargo\registry\src\github.com-1ecc6299db9ec823\glyph_brush-0.4.3\src\lib.rs C:\Users\Ivan\.cargo\registry\src\github.com-1ecc6299db9ec823\glyph_brush-0.4.3\src\glyph_brush.rs C:\Users\Ivan\.cargo\registry\src\github.com-1ecc6299db9ec823\glyph_brush-0.4.3\src\glyph_brush\builder.rs C:\Users\Ivan\.cargo\registry\src\github.com-1ecc6299db9ec823\glyph_brush-0.4.3\src\glyph_calculator.rs C:\Users\Ivan\.cargo\registry\src\github.com-1ecc6299db9ec823\glyph_brush-0.4.3\src\owned_section.rs C:\Users\Ivan\.cargo\registry\src\github.com-1ecc6299db9ec823\glyph_brush-0.4.3\src\section.rs
+
+C:\Users\Ivan\labs\rust\3D-Gravity-Game\gravity3d\target\debug\deps\glyph_brush-b16794d295484e94.d: C:\Users\Ivan\.cargo\registry\src\github.com-1ecc6299db9ec823\glyph_brush-0.4.3\src\lib.rs C:\Users\Ivan\.cargo\registry\src\github.com-1ecc6299db9ec823\glyph_brush-0.4.3\src\glyph_brush.rs C:\Users\Ivan\.cargo\registry\src\github.com-1ecc6299db9ec823\glyph_brush-0.4.3\src\glyph_brush\builder.rs C:\Users\Ivan\.cargo\registry\src\github.com-1ecc6299db9ec823\glyph_brush-0.4.3\src\glyph_calculator.rs C:\Users\Ivan\.cargo\registry\src\github.com-1ecc6299db9ec823\glyph_brush-0.4.3\src\owned_section.rs C:\Users\Ivan\.cargo\registry\src\github.com-1ecc6299db9ec823\glyph_brush-0.4.3\src\section.rs
+
+C:\Users\Ivan\.cargo\registry\src\github.com-1ecc6299db9ec823\glyph_brush-0.4.3\src\lib.rs:
+C:\Users\Ivan\.cargo\registry\src\github.com-1ecc6299db9ec823\glyph_brush-0.4.3\src\glyph_brush.rs:
+C:\Users\Ivan\.cargo\registry\src\github.com-1ecc6299db9ec823\glyph_brush-0.4.3\src\glyph_brush\builder.rs:
+C:\Users\Ivan\.cargo\registry\src\github.com-1ecc6299db9ec823\glyph_brush-0.4.3\src\glyph_calculator.rs:
+C:\Users\Ivan\.cargo\registry\src\github.com-1ecc6299db9ec823\glyph_brush-0.4.3\src\owned_section.rs:
+C:\Users\Ivan\.cargo\registry\src\github.com-1ecc6299db9ec823\glyph_brush-0.4.3\src\section.rs:

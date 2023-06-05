@@ -1,0 +1,5 @@
+C:\Users\Ivan\labs\rust\3D-Gravity-Game\gravity3d\target\debug\build\num-integer-4d71e6c33d51fd90\build_script_build-4d71e6c33d51fd90.exe: C:\Users\Ivan\.cargo\registry\src\github.com-1ecc6299db9ec823\num-integer-0.1.45\build.rs
+
+C:\Users\Ivan\labs\rust\3D-Gravity-Game\gravity3d\target\debug\build\num-integer-4d71e6c33d51fd90\build_script_build-4d71e6c33d51fd90.d: C:\Users\Ivan\.cargo\registry\src\github.com-1ecc6299db9ec823\num-integer-0.1.45\build.rs
+
+C:\Users\Ivan\.cargo\registry\src\github.com-1ecc6299db9ec823\num-integer-0.1.45\build.rs:
