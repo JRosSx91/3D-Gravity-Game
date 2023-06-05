@@ -23,7 +23,7 @@ fn main() {
         three::Geometry::uv_sphere(50.0, 32, 16),
         three::material::Basic {
             color: 0xffff00,
-            wireframe: false,
+            map: None,
         },
     );
     star.set_position([0.0, 0.0, 0.0]);
@@ -40,7 +40,13 @@ fn main() {
             speed_z: 0.0,
             mass: rand::random::<f32>() * 4.0 + 1.0,
         };
-        let mut mesh = window.factory.sphere(particle.mass * 2.0, 16, 16);
+        let mut mesh = window.factory.mesh(
+            three::Geometry::uv_sphere(particle.mass * 2.0, 16, 16),
+            three::material::Basic {
+                color: 0xffff00,
+                map: None,
+            },
+        );
         mesh.set_position([particle.x, particle.y, particle.z]);
         scene.add(&mesh);
         particles.push(particle);
@@ -52,6 +58,13 @@ fn main() {
         .build();
 
     while window.update() && !window.input.hit(three::KEY_ESCAPE) {
+        let dt = window.input.delta_time();
+        if window.input.hit(three::KEY_LEFT) {
+            camera.transform.translate_local([dt, 0.0, 0.0]);
+        }
+        if window.input.hit(three::KEY_RIGHT) {
+            camera.transform.translate_local([-dt, 0.0, 0.0]);
+        }
         for particle in &mut particles {
             let dx = star.position().x - particle.x;
             let dy = star.position().y - particle.y;
