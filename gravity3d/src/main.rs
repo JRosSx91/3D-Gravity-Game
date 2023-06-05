@@ -12,5 +12,5 @@ struct Particle {
     mass: f32,
 }
 fn main() {
-    println!("Hello, world!");
+    let window = Window::new("Star Formation", "/assets");
 }
