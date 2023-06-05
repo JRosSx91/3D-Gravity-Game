@@ -45,4 +45,6 @@ fn main() {
         .position([0.0, 0.0, 500.0])
         .target([0.0, 0.0, 0.0])
         .build();
+
+    while window.update() && !window.input.hit(three::KEY_ESCAPE) {}
 }
