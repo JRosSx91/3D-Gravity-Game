@@ -1,4 +1,5 @@
-use three::controls::OrbitControls;
+use rand::random;
+use three::controls::orbit;
 use three::window::Window;
 use three::Object;
 
@@ -12,15 +13,19 @@ struct Particle {
     mass: f32,
 }
 fn main() {
-    let window = Window::new("Star Formation", "/assets");
-
-    let mut camera = window.factory.perspective_camera(60.0, 0.1, 1000.0);
+    let window = Window::new("Star Formation");
+    let mut camera = window.factory.perspective_camera(60.0, 0.1..1000.0);
     camera.set_position([0.0, 0.0, 500.0]);
 
     let mut scene = window.factory.scene();
 
-    let mut star = window.factory.sphere(50.0, 32, 32);
-    star.set_color(0xffff00);
+    let mut star = window.factory.mesh(
+        three::Geometry::uv_sphere(50.0, 32, 16),
+        three::material::Basic {
+            color: 0xffff00,
+            wireframe: false,
+        },
+    );
     star.set_position([0.0, 0.0, 0.0]);
     scene.add(&star);
 
